@@ -1,9 +1,7 @@
 /* style.css */
 
 /* font imports */
-<style>
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-</style>
 /* ------------ */
 
 
@@ -12,5 +10,5 @@ body {
 }
 
 h1 {
-	
+
 }
