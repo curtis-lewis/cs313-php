@@ -12,3 +12,18 @@ body {
 a:hover {
 	font-weight: bold;
 }
+
+a {
+	padding-left: 10px;
+	color: white;
+}
+
+#links {
+	background-color: grey;
+}
+
+#test {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
