@@ -7,19 +7,37 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	padding-left: 12em;
+	padding-right: 12em;
 }
 
 a:hover {
-	font-weight: bold;
+	background-color: #2d323a;
 }
 
-a {
-	padding-left: 10px;
+a:active {
+	background-color: #2d323a;
+}
+
+#nav_bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #3e4551;
+	overflow: hidden;
+}
+
+#nav_item {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+
+#nav_link {
+	display: block;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
 	color: white;
-}
-
-#links {
-	background-color: grey;
 }
 
 #test {
