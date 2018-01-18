@@ -2,11 +2,10 @@
 <html>
 <head>
 	<title>Homepage</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="web_files/style.css">
 </head>
 <body>
 	<div id="header">
-	<h1 class="title">Curtis Lewis</h1>
 		<?php include 'header.php' ?>
 	</div>
 	<div class="content">
@@ -21,10 +20,10 @@
 	</ul>
 	<br>
 	<div id="image_carousel">
-	<img class="mySlides" src="moose_blood_image.jpg">
-	<img class="mySlides" src="hots_image.jpg">
-	<img class="mySlides" src="wh40k_image.jpg">
-	<img class="mySlides" src="software_image.jpg">
+	<img class="mySlides" src="images/moose_blood_image.jpg">
+	<img class="mySlides" src="images/hots_image.jpg">
+	<img class="mySlides" src="images/wh40k_image.jpg">
+	<img class="mySlides" src="images/software_image.jpg">
 	<div id="arrows">
 	<button class="display_left" onclick="plusDivs(-1)">&#10094;</button>
 	<button class="display_right" onclick="plusDivs(+1)">&#10095;</button>
@@ -34,8 +33,8 @@
 	<br>
 	<br>
 	<div class="footer">
-		<?php include 'footer.php'?>
+		<?php include 'footer.php' ?>
 	</div>
 </body>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="web_files/script.js"></script>
 </html>
