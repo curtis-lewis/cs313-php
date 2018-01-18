@@ -34,8 +34,7 @@
 	<br>
 	<br>
 	<div class="footer">
-		<hr>
-		<p>Copyright 2017 &copy Curtis Lewis</p>
+		<?php include 'footer.php'?>
 	</div>
 </body>
 <script type="text/javascript" src="script.js"></script>
