@@ -17,7 +17,7 @@
 		<li>Seeking to expand knowledge in my chosen career field, gain real world experience, and hopefully secure future employment upon completion of internship.</li>
 	</ul>
 	<h3>Education</h3>
-	<h4>Brigham Young University - Idaho</h4>
+	<h4>Brigham Young University-Idaho</h4>
 	<ul>
 		<li>Expected Graduation: Summer 2018</li>
 		<li>Studying B.S. in Software Engineering</li>
