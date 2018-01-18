@@ -26,12 +26,14 @@
 		<li>Related coursework: C++, Java, HTML, CSS, JavaScript, Android Studio App Development, Technical Communication and Documentation, Object-Oriented Programming, UI Design.</li>
 	</ul>
 	<h3>Experience</h3>
+	<h4>Brigham Young University-Idaho</h4>
 	<ul>
-		<li><strong>Brigham Young University–Idaho</strong></li>
 		<li>Assistant Project Manager | August 2017 - Present</li>
 		<li>Assisting in the creation and editing of HTML online course pages.</li>
-		<li>Working extensively with course leads and subject matter experts to develop quality online courses></li>
-		<li><strong>Brigham Young University–Idaho</strong></li>
+		<li>Working extensively with course leads and subject matter experts to develop quality online courses</li>
+	</ul>
+	<h4>Brigham Young University-Idaho</h4>
+	<ul>
 		<li>Online Course Review | February 2016 - July 2017</li>
 		<li>Reviewed online courses, offering a student perspective on curriculum, and ensuring a compliance with BYU-Idaho standards.</li>
 		<li>Trained new employees on copyediting, copyright, and reviewing procedures.</li>
