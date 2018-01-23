@@ -3,6 +3,7 @@
 <head>
 	<title>Homepage</title>
 	<link rel="stylesheet" type="text/css" href="web_files/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div id="header">
