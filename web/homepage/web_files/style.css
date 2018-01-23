@@ -33,6 +33,10 @@ a:active {
 	background-color: #2d323a;
 }
 
+.link:hover {
+	font-weight: bold;
+}
+
 #nav_bar {
 	list-style-type: none;
 	margin: 0;

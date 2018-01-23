@@ -11,7 +11,9 @@
 	</div>
 	<div class="content">
 	<h2>Assignments</h2>
-	<p>Coming soon!</p>
+	<ul>
+		<li><a class="link" href="../prove03/browse.php" target="_blank">Prove 03 - Shopping Cart</a></li>
+	</ul>
 	</div>
 	<br>
 	<br>

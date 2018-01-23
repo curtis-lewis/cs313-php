@@ -11,7 +11,7 @@
 	</div>
 	<div class="content">
 	<h2>Projects</h2>
-	<p>Coming soon!</p>
+	<h3>Coming soon!</h3>
 	</div>
 	<br>
 	<br>
