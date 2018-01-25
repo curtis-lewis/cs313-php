@@ -11,10 +11,9 @@ $_SESSION["password"] = $password;
 <html>
 <head>
 	<title>Browse</title>
-	<?php
-	echo "Welcome back $email";
-	?>
-	<a href="checkout.php">Checkout</a>
+	<?php include 'header.php' ?>
+	<?php echo "Welcome " . $email; ?>
+	<h2>Browse</h2>
 </head>
 <body>
 	
