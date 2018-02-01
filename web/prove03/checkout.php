@@ -1,6 +1,6 @@
 <?php
 session_start();
-$email = $_SESSION["email"];
+$username = $_SESSION["username"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,8 +10,8 @@ $email = $_SESSION["email"];
 <body>
 	<?php include 'header.php'; ?>
 	<h2>Checkout</h2>
-	<?php echo $email . " is checking out"; ?>
+	<?php echo $username . " is checking out"; ?>
 	<br>
-	<a href="confirm.php">Checkout</a>
+	<a href="confirm.php">Confirm</a>
 </body>
 </html>

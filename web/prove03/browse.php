@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-$email = $_POST["email"];
+$username = $_POST["username"];
 $password = $_POST["password"];
 
-$_SESSION["email"] = $email;
+$_SESSION["username"] = $username;
 $_SESSION["password"] = $password;
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ $_SESSION["password"] = $password;
 <head>
 	<title>Browse</title>
 	<?php include 'header.php' ?>
-	<?php echo "Welcome " . $email; ?>
+	<?php echo "Welcome " . $username; ?>
 	<h2>Browse</h2>
 </head>
 <body>

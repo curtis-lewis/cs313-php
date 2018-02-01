@@ -8,7 +8,7 @@ session_start();
 	<?php include 'header.php'; ?>
 	<h1>Please Log in!</h1>
 	<form action="browse.php" method="post">
-		Email: <input type="text" name="email"><br>
+		Username: <input type="text" name="username"><br>
 		Password: <input type="password" name="password"><br>
 		<input type="submit" name="submit">
 	</form>
