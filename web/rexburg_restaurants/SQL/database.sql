@@ -26,7 +26,8 @@ CREATE TABLE review
 	title VARCHAR(100) NOT NULL,
 	content TEXT NOT NULL,
 	rating INTEGER NOT NULL,
-	post_date DATE NOT NULL
+	post_date DATE NOT NULL,
+	review_url VARCHAR(40)
 );
 
 CREATE TABLE comment 
