@@ -18,3 +18,20 @@ VALUES('D&C', 93, 28, 'He that keepeth his commandments receiveth truth and ligh
 
 INSERT INTO scriptures (book, chapter, verse, content)
 VALUES('Mosiah', 16, 9, 'He is the light and the life of the world; yea, a light that is endless, that can never be darkened; yea, and also a life which is endless, that there can be no more death.');
+
+CREATE TABLE topic
+(
+	topic_id SERIAL NOT NULL,
+	name VARCHAR(30) NOT NULL
+);
+
+INSERT INTO topic(name) VALUES ('Faith');
+INSERT INTO topic(name) VALUES ('Sacrifice');
+INSERT INTO topic(name) VALUES ('Charity');
+
+CREATE TABLE scriptures_topic 
+(
+	scriptures_topic_id SERIAL NOT NULL PRIMARY KEY,
+	scriptures_id INTEGER NOT NULL REFERENCES scriptures(scriptures_id),
+	topic_id INTEGER NOT NULL REFERENCES topic(topic_id)
+);
