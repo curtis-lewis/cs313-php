@@ -45,7 +45,7 @@ $comments = $comment_stmt->fetchAll(PDO::FETCH_ASSOC);
 		<hr>
 		<h2>Leave a Comment Below!</h2>
 		<form method="POST" action="add_comment.php">
-		Date: <input type="date" name="post_date"><br>
+		Date: <input type="date" name="post_date"><br><br>
 		Content<br>
 		<textarea rows="10" cols="50" name="content"></textarea><br>
 		<input type="submit" value="Add Comment">
