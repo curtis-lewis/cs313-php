@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'on');
 
-require("dbConnect.php");
+require('dbConnect.php');
 
 $db = get_db();
 

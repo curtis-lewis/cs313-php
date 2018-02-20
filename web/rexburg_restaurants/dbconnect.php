@@ -18,7 +18,7 @@ function get_db() {
 		if (!isset($dbUrl) || empty($dbUrl)) {
 			// example localhost configuration URL with user: "ta_user", password: "ta_pass"
 			// and a database called "scripture_ta"
-			require('.:/app/.heroku/php/lib/rr_credentials.php');
+			require('rr_credentials.php');
 
 			// NOTE: It is not great to put this sensitive information right
 			// here in a file that gets committed to version control. It's not
