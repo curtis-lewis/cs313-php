@@ -19,4 +19,5 @@ $stmt->bindValue('content', $content, PDO::PARAM_STR);
 $stmt->execute();
 
 header("Location: the_burg.php");
+die();
 ?>

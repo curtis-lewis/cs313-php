@@ -32,6 +32,5 @@ $course = $stmt->fetch(PDO::FETCH_ASSOC);
 	<textarea name="content"></textarea><br>
 	<input type="submit" value="Create Note">
 	</form>
-
 </body>
 </html>

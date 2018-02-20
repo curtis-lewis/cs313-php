@@ -21,8 +21,6 @@ $comment_stmt = $db->prepare($comment_query);
 $comment_stmt->execute();
 
 $comments = $comment_stmt->fetchAll(PDO::FETCH_ASSOC);
-
-
 ?>
 
 <!DOCTYPE html>
