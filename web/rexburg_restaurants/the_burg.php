@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
+
 require("dbConnect.php");
 
 $db = get_db();
@@ -18,6 +21,8 @@ $comment_stmt = $db->prepare($comment_query);
 $comment_stmt->execute();
 
 $comments = $comment_stmt->fetchAll(PDO::FETCH_ASSOC);
+
+
 ?>
 
 <!DOCTYPE html>
