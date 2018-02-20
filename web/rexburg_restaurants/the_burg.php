@@ -6,7 +6,7 @@ require('dbconnect.php');
 
 $db = get_db();
 
-$query = "SELECT title, content, rating, post_date FROM review WHERE review_id=1";
+$query = 'SELECT title, content, rating, post_date FROM review WHERE review_id=1';
 $stmt = $db->prepare($query);
 $stmt->execute();
 
