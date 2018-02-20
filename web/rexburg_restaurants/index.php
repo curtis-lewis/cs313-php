@@ -11,7 +11,7 @@
 	</div>
 	<div class="content">
 		<h2>Welcome to Rexburg Reviews</h2>
-		<p>Welcome! This is the best website for reviews of Rexburg's restaurants. Sign in above to leave your own review!</p>
+		<p>Welcome! This is the best website for reviews of Rexburg's restaurants.</p>
 		<h2>Latest Reviews</h2>
 		<p>Be sure to check out our latest <a href="the_burg.php">review of The Burg!</a> Want to share your opinion? Log in and leave your own comment!</p>
 		<h2>News</h2>
