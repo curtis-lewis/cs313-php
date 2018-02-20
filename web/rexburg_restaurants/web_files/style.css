@@ -25,15 +25,11 @@ body {
 	font-size: 3em;
 }
 
-a:hover {
+#nav_link:hover {
 	background-color: #2d323a;
 }
 
-a:active {
-	background-color: #2d323a;
-}
-
-.link:hover {
+.p_link:hover {
 	font-weight: bold;
 }
 

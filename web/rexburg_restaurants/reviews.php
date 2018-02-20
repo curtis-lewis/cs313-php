@@ -13,7 +13,7 @@
 		<h2>Reviews</h2>
 		<p>Below you can see our full list of reviews.</p>
 		<ul>
-			<li><a href="the_burg.php">The Burg Review</a></li>
+			<li><a class="p_link" href="the_burg.php">The Burg Review</a></li>
 			<li>Fresco</li>
 			<li>Origial Thai</li>
 			<li>Ramirez's</li>
