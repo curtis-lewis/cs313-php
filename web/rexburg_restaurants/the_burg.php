@@ -47,7 +47,7 @@ $comments = $comment_stmt->fetchAll(PDO::FETCH_ASSOC);
 		<form method="POST" action="add_comment.php">
 		Date: <input type="date" name="post_date"><br>
 		Content<br>
-		<textarea name="content"></textarea><br>
+		<textarea rows="10" cols="50" name="content"></textarea><br>
 		<input type="submit" value="Add Comment">
 		</form>
 
