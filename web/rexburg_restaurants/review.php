@@ -50,20 +50,6 @@ $comments = $comment_stmt->fetchAll(PDO::FETCH_ASSOC);
 		</form>
 
 		<h2>Comments</h2>
-		<?php
-		foreach ($comments as $comment) 
-		{
-			$comment_content = $comment['content'];
-			$comment_date = $comment['post_date'];
-			$comment_score = $comment['comment_score'];
-
-			echo '<strong><p>Placeholder User</p></strong>';
-			echo '<p>' . $comment_date . '</p>';
-			echo '<p>Comment Score: ' . $comment_score . '</p>';
-			echo '<p>' . $comment_content . '</p>';
-			echo '<br>';
-		}
-		?>
 	</div>
 	<div class="footer">
 		<?php include 'require/footer.php' ?>
