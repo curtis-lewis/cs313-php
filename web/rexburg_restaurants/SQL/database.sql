@@ -26,8 +26,7 @@ CREATE TABLE review
 	title VARCHAR(100) NOT NULL,
 	content TEXT NOT NULL,
 	rating INTEGER NOT NULL,
-	post_date DATE NOT NULL,
-	review_url VARCHAR(40)
+	post_date DATE NOT NULL
 );
 
 CREATE TABLE comment 
@@ -45,6 +44,3 @@ CREATE TABLE review_comment
 	review_id SERIAL NOT NULL REFERENCES review(review_id),
 	comment_id SERIAL NOT NULL REFERENCES comment(comment_id)
 );
-
-INSERT INTO review (user_id, restaurant_id, title, content, rating, post_date, review_url) 
-VALUES (1, 1, 'Review of the Burg', 'Great food, great atmosphere, a little bit pricey.', 7, '2018-02-10', 'the_burg.php');

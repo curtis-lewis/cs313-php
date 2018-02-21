@@ -1,11 +1,14 @@
 <?php
 require('require/dbconnect.php');
 
+$review_id = $_GET['review_id'];
+
 $db = get_db();
 
-$query = 'SELECT title, content, rating, post_date FROM review WHERE review_id=1';
+$query = 'SELECT title, content, rating, post_date FROM review WHERE review_id=:review_id';
 $stmt = $db->prepare($query);
-
+$stmt->bindValue(':review_id', $review_id, PDO::PARAM_INT);
+$stmt->execute();
 
 $review = $stmt->fetch(PDO::FETCH_ASSOC);
 $title = $review['title'];
@@ -19,7 +22,6 @@ $comment_stmt->execute();
 
 $comments = $comment_stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>

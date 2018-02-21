@@ -1,8 +1,5 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
-
-require 'dbconnect.php';
+require '../require/dbconnect.php';
 
 $db = get_db();
 
@@ -21,6 +18,6 @@ $stmt->bindValue('content', $content, PDO::PARAM_STR);
 
 $stmt->execute();
 
-header("Location: the_burg.php");
+header("Location: ../the_burg.php");
 die();
 ?>

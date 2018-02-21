@@ -7,6 +7,8 @@
 * OR Heroku credentials, depending on whether the code
 * is executing at heroku.
 ***********************************************************/
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
 
 function get_db() {
 	$db = NULL;
