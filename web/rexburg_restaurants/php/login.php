@@ -1,20 +1,45 @@
 <?php
+require('../require/dbconnect.php');
 session_start();
 
 $username = $_POST["username"];
+$username = htmlspecialchars($username);
 $password = $_POST["password"];
+$badLogin = false;
 
-$_SESSION["username"] = $username;
+$db = get_db();
 
-if (!empty($username)) 
+$query = 'SELECT password FROM _user WHERE username = :username';
+$stmt = $db->prepare($query);
+$stmt->bindValue(':username', $username);
+$result = $stmt->execute();
+
+if ($result)
 {
-	$_SESSION["authenticated"] = true;
-}
-elseif (empty($username)) 
-{
-	$_SESSION["authenticated"] = false;
-}
+	$row = $stmt->fetch();
+	$hashedPasswordFromDB = $row['password'];
 
-echo $username;
-echo $password;
+	if (password_verify($password, $hashedPasswordFromDB))
+	{
+		$_SESSION['username'] = $username;
+		$_SESSION['authenticated'] = true;
+		header("Location: ../profile.php");
+		die();
+	}
+	else
+	{
+		$badLogin = true;
+	}
+}
+else
+{
+	$badLogin = true;
+}
+?>
+<?php
+if ($badLogin)
+{
+	echo "Incorrect username or password!<br /><br />\n";
+	echo '<a href="../profile.php">Try Again</a>';
+}
 ?>
