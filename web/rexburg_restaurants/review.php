@@ -1,7 +1,10 @@
 <?php
 require('require/dbconnect.php');
+ini_set('display_errors', 'off');
+session_start();
 
 $review_id = $_GET['review_id'];
+$_SESSION['c_review_id'] = $review_id;
 
 $db = get_db();
 
@@ -39,16 +42,23 @@ $comments = $comment_stmt->fetchAll(PDO::FETCH_ASSOC);
 		echo '<h2>Rating: ' . $rating . '</h2>';
 		echo '<p>' . $content . '</p>';
 		?>
-
 		<hr>
-		<h2>Leave a Comment Below!</h2>
+		<?php 
+		if ($_SESSION['authenticated'])
+		{
+			echo '<h2>Leave a Comment Below!</h2>
 		<form method="POST" action="php/add_comment.php">
 		Date: <input type="date" name="post_date"><br><br>
 		Content<br>
 		<textarea rows="10" cols="50" name="content"></textarea><br>
 		<input type="submit" value="Add Comment">
-		</form>
-
+		</form>';
+		}
+		else
+		{
+			echo '<h2>Sign In To Leave a Comment!</h2>';
+		}
+		?>
 		<h2>Comments</h2>
 	</div>
 	<div class="footer">
