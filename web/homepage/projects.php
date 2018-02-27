@@ -12,7 +12,7 @@
 	<div class="content">
 	<h2>Projects</h2>
 	<ul>
-		<li><a href="rexburg_restaurants/index.php">Rexburg Restaurants</a></li>
+		<li><a href="../rexburg_restaurants/index.php">Rexburg Restaurants</a></li>
 	</ul>
 	</div>
 	<br>
