@@ -1,2 +1,2 @@
 <hr>
-<p>Copyright 2018 &copy Rexburg Reviews</p>
+<p>Copyright 2018 &copy Rexburg Restaurants</p>
