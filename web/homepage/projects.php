@@ -11,7 +11,9 @@
 	</div>
 	<div class="content">
 	<h2>Projects</h2>
-	<h3>Coming soon!</h3>
+	<ul>
+		<li><a href="rexburg_restaurants/index.php">Rexburg Restaurants</a></li>
+	</ul>
 	</div>
 	<br>
 	<br>
